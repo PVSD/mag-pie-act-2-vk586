@@ -42,6 +42,39 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+		else if (statement.indexOf("hello") >= 0
+				|| statement.indexOf("hi") >= 0
+				|| statement.indexOf("greetings") >= 0)
+		{
+			response = "Greetings. How are you?";
+		}
+		else if (statement.indexOf("good") >= 0
+				|| statement.indexOf("great") >= 0
+				|| statement.indexOf("fantastic") >= 0
+				|| statement.indexOf("wonderful") >= 0)
+		{
+			response = "Good to hear. I'm doing great as well.";
+		}
+		else if (statement.indexOf("bad") >= 0
+				|| statement.indexOf("terrible") >= 0
+				|| statement.indexOf("awful") >= 0
+				|| statement.indexOf("horrible") >= 0)
+		{
+			response = "I'm sorry to hear that. I hope your day gets better.";
+		}
+		else if (statement.indexOf("cat") >= 0
+				|| statement.indexOf("dog") >= 0)
+		{
+			response = "Tell me more about your pets.";
+		}
+		else if (statement.indexOf("Mr. Pennebacker") >= 0)
+		{
+		response = "He sounds like a good teacher.";
+		}
+		else if (statement.trim().indexOf("") >= 0)
+		{
+			response = "Say something, please.";
+		}
 		else
 		{
 			response = getRandomResponse();
